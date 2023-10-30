@@ -31,7 +31,7 @@ public class Main {
         List<Person> newOneList = new ArrayList<>();
         for (int i = 0; i < list.size(); i++) {
             Person p = list.get(i);
-            if (p.sex == Pol.MAN && p.age>=65 || p.workExp>=20 || p.sex == Pol.WOMAN && p.age>=60){
+            if ( p.workExp>=20 && ((p.sex == Pol.MAN && p.age>=65) || (p.sex == Pol.WOMAN && p.age>=60))){
                 newOneList.add(p);
             }
         }
